@@ -1,4 +1,5 @@
-ARG BASE_IMAGE=ghcr.io/pulp/pulp-ci-centos10:latest
+# Pin the development base used by the read-replica experiment; do not use :latest.
+ARG BASE_IMAGE=ghcr.io/pulp/pulp-ci-centos10@sha256:38b0c45ae2019d63122f166a2ab27b993f40ecb2d96d69324d4969016b765a27
 FROM $BASE_IMAGE
 
 # configure S6 to use env variables
