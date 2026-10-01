@@ -35,6 +35,7 @@ services:
     volumes:
       - "{SRC_DIR}:/src:z"
       - "{OCI_ENV_DIR}:/opt/oci_env:z"
+      - "{OCI_ENV_DIR}/base/settings.py:/etc/pulp/settings.py:z"
       - "oci_pulp:/var/lib/pulp"
       - "oci_redis_data:/data"
       - "oci_pg_data:/var/lib/pgsql"
