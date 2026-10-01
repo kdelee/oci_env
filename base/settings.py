@@ -21,6 +21,7 @@ DATABASES = {
     },
 }
 DATABASE_ROUTERS = ['pulpcore.app.local_read_router.MavenReadReplicaRouter']
+ENABLED_PLUGINS = ['pulp_file', 'pulp_maven', 'pulp_rpm']
 SECRET_KEY='local-pulp-experiment-secret-key'
 CACHE_ENABLED=True
 MAVEN_PACKAGE_COUNT_CACHE_ENABLED=True
